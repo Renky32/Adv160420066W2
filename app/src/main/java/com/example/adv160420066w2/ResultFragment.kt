@@ -26,12 +26,13 @@ class ResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         if(arguments != null) {
-            val score = resultFragmentAvg.fromBundle(requireArguments()).playerName
+            val Score =
+                ResultFragmentArgs.fromBundle(requireArguments()).score
+            binding.txtScore.text = "$Score"
         }
         binding.btnBack.setOnClickListener{
-
+            val action = ResultFragmentDirections.actionMain()
+            Navigation.findNavController(it).navigate(action)
         }
     }
-
-
 }

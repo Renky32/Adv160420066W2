@@ -54,9 +54,9 @@ class GameFragment : Fragment() {
                 binding.txtTurn.text = "$playerName's Turn"
             }
 
-            val action = GameFragmentDirections.actionResult()
+            val action = GameFragmentDirections.actionResult(score)
             Navigation.findNavController(it).navigate(action)
         }
-
+    }
 
 }
