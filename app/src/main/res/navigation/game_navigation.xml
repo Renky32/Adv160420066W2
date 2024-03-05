@@ -19,11 +19,20 @@
         android:name="com.example.adv160420066w2.GameFragment"
         android:label="GameScreen"
         tools:layout="@layout/fragment_game">
-        <action
-            android:id="@+id/actionMainFragment"
-            app:destination="@id/mainFragment" />
         <argument
             android:name="player_name"
             app:argType="string" />
+        <action
+            android:id="@+id/actionResult"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.adv160420066w2.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/actionMain"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

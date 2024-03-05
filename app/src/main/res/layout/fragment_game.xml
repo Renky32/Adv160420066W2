@@ -11,32 +11,52 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btnBack"
+            android:id="@+id/btnResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="158dp"
             android:layout_marginTop="22dp"
             android:layout_marginEnd="148dp"
-            android:layout_marginBottom="369dp"
-            android:text="Back"
+            android:layout_marginBottom="350dp"
+            android:text="Result"
             app:icon="@drawable/baseline_keyboard_backspace_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtTurn" />
+            app:layout_constraintTop_toBottomOf="@+id/txtTurn"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/txtTurn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="164dp"
-            android:layout_marginTop="272dp"
-            android:layout_marginEnd="167dp"
-            android:layout_marginBottom="23dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="156dp"
             android:text="Player's Turn"
-            app:layout_constraintBottom_toTopOf="@+id/btnBack"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="84dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTurn" />
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="168dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="18dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTurn" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
