@@ -29,6 +29,7 @@ class ResultFragment : Fragment() {
             val Score =
                 ResultFragmentArgs.fromBundle(requireArguments()).score
             binding.txtScore.text = "$Score"
+            Res
         }
         binding.btnBack.setOnClickListener{
             val action = ResultFragmentDirections.actionMain()

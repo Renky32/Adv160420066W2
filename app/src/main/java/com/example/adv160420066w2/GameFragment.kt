@@ -57,6 +57,10 @@ class GameFragment : Fragment() {
             val action = GameFragmentDirections.actionResult(score)
             Navigation.findNavController(it).navigate(action)
         }
+        binding.btnTest.setOnClickListener({
+            val action = GameFragmentDirections.actionTestFragment()
+            Navigation.findNavController(it).navigate(action)
+        })
     }
 
 }

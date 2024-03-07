@@ -28,7 +28,6 @@ class MainFragment : Fragment() {
             val action = MainFragmentDirections.actionGameFragment(playerName)
             Navigation.findNavController(it).navigate(action)
         }
-
     }
 
 }

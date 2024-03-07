@@ -25,6 +25,10 @@
         <action
             android:id="@+id/actionResult"
             app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/actionTestFragment"
+            app:destination="@id/tesFragment"
+            app:popUpTo="@id/tesFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -38,4 +42,9 @@
             android:name="score"
             app:argType="integer" />
     </fragment>
+    <fragment
+        android:id="@+id/tesFragment"
+        android:name="com.example.adv160420066w2.TesFragment"
+        android:label="fragment_tes"
+        tools:layout="@layout/fragment_tes" />
 </navigation>
